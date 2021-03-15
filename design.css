@@ -1,0 +1,108 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    height: 100vh;
+    margin:0;
+}
+
+
+.bgimg{
+    background-image: url('./Assets/pexels-pixabay-276514.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    filter: blur(0.8px);
+}
+
+
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10%;
+    top: 35vh;
+    color: blanchedalmond;
+  
+    position: absolute;
+    text-align: center;
+    width: 80%;
+    height: max-content;
+    padding: 20px;
+    z-index: 2;
+    font-family: 'Dancing Script', cursive;
+    text-shadow: -15px 5px 20px #d4ac3b79;
+
+}
+
+.home h2{
+    font-size: 60px;
+    display: block;
+    animation: fadeInDown;
+    transition: 1s;
+    animation-duration: 2s;
+  
+}
+
+.home h1{
+    font-size: 80px;
+    display: block;
+    transition: 2s;
+    animation:zoomIn 2s 2s linear alternate both;
+    
+    
+}
+
+@keyframes zoomIn{
+    from{
+        opacity: 0;
+    }
+}
+
+.home p{
+    font-size: 40px;
+    display: block;
+    animation: fadeInLeft 2s 4500ms linear alternate both;
+}
+
+@keyframes fadeInLeft{
+    from{
+        opacity: 0;
+    }
+}
+
+.home .btn{
+    font-size: 25px;
+    display: block;
+    animation: fadeInUp 2s 6000ms linear alternate both;
+}
+
+@keyframes fadeInUp{
+    from{
+        opacity: 0;
+    }
+}
+
+
+.btn a{
+    display: inline-block;
+    text-decoration: none;
+    font-size: larger;
+    padding: 5px 10px 5px 10px;
+    background-color: rgba(222,226, 230, 0.4);
+    color: blanchedalmond;
+    border-radius: 20px;
+    transition: 600ms;
+    box-shadow: rgb(129, 89, 3) 0px 30px 90px;
+    
+}
+
+.btn a:hover{
+   transform: scale(1.15);
+    background: rgb(148,71,11);
+    background: linear-gradient(90deg, rgba(148,71,11,1) 0%, rgba(40,14,3,1) 26%, rgba(0,0,0,1) 100%); 
+}
